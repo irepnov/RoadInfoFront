@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html manifest="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=6fdc1a44-441c-4de2-96f1-b6dd6bc25631&lang=ru_RU&load=package.full" type="text/javascript"></script>
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://yastatic.net/s3/mapsapi-jslibs/area/0.0.1/util.calculateArea.min.js" type="text/javascript"></script>
+    <script src="https://yastatic.net/s3/mapsapi-jslibs/polylabeler/1.0.1/polylabel.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="resources/js/jszip.min.js"></script>
+    <script type="text/javascript" src="resources/js/xlsx.min.js"></script>
+    <script type="text/javascript" src="resources/js/polylineoffset.js"></script>
+
+    <script type="text/javascript">
+        var javaEnum = "<?php echo $phpEnum ?>";
+
+        var ProxyUrlBackend = 'http://roadinfo_back.test';
+        var ProxyUrlBackRoutes = 'http://distances_back.test';
+        //var ProxyUrlBackRoutes = 'http://inet.distances.amstrad-road.ru';
+        //http://81.95.223.232:8118
+        if (javaEnum == "production"){//при сливание бэкенда и фронтэнда, эта переменная будет = production
+            ProxyUrlBackend = '';
+            ProxyUrlBackRoutes = 'http://inet.distances.amstrad-road.ru';
+        }
+    </script>
+    <title>Агрегатор дорожной информации</title>
+    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script id="microloader" data-app="66b1f825-78a7-44aa-92f4-abe74bdf3938" type="text/javascript" src="bootstrap.js"></script>
+</head>
+<body>
+<!--<div id="mapLeaflet"></div>-->
+</body>
+</html>

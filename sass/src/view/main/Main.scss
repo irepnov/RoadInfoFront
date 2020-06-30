@@ -1,0 +1,504 @@
+/**
+ * Generates a set of style rules for the "navigation" tab UI.
+
+@include extjs-tab-panel-ui(
+    $ui: 'navigation',
+    $ui-tab-background-color: transparent,
+    $ui-tab-background-color-over: #505050,
+    $ui-tab-background-color-active: #303030,
+    $ui-tab-background-gradient: 'none',
+    $ui-tab-background-gradient-over: 'none',
+    $ui-tab-background-gradient-active: 'none',
+    $ui-tab-color: #acacac,
+    $ui-tab-color-over: #c4c4c4,
+    $ui-tab-color-active: #fff,
+    $ui-tab-glyph-color: #acacac,
+    $ui-tab-glyph-color-over: #c4c4c4,
+    $ui-tab-glyph-color-active: #fff,
+    $ui-tab-glyph-opacity: 1,
+    $ui-tab-border-radius: 0,
+    $ui-tab-border-width: 0,
+    $ui-tab-inner-border-width: 0,
+    $ui-tab-padding: 24px,
+    $ui-tab-margin: 0,
+    $ui-tab-font-size: 15px,
+    $ui-tab-font-size-over: 15px,
+    $ui-tab-font-size-active: 15px,
+    $ui-tab-line-height: 19px,
+    $ui-tab-font-weight: bold,
+    $ui-tab-font-weight-over: bold,
+    $ui-tab-font-weight-active: bold,
+    $ui-tab-icon-width: 24px,
+    $ui-tab-icon-height: 24px,
+    $ui-tab-icon-spacing: 5px,
+    $ui-bar-background-color: #404040,
+    $ui-bar-background-gradient: 'none',
+    $ui-bar-padding: 0,
+    $ui-strip-height: 0
+);
+*/
+
+/**
+ * Generates a set of style rules for the "navigation" panel UI.
+
+@include extjs-panel-ui(
+    $ui: 'navigation',
+    $ui-header-color: #fff,
+    $ui-header-glyph-color: #fff,
+    $ui-header-glyph-opacity: 1,
+    $ui-header-font-size: 20px,
+    $ui-header-line-height: 24px,
+    $ui-header-font-weight: bold,
+    $ui-header-icon-height: 24px,
+    $ui-header-icon-width: 24px,
+    $ui-header-icon-spacing: 15px,
+    $ui-header-background-color: $base-color,
+    $ui-header-padding: 0,
+    $ui-header-text-margin: 36px,
+    $ui-header-noborder-adjust: false
+);
+ */
+
+.x-title-icon-navigation {
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.x-tab-icon-el-navigation {
+    font-family: FontAwesome;
+    color: #acacac;
+
+    .x-tab-over & {
+        color: #c4c4c4;
+    }
+
+    .x-tab-active & {
+        color: #fff;
+    }
+}
+
+.x-panel-header-title-navigation > .x-title-text-navigation:after {
+    top: 30px;
+    right: -24px;
+}
+
+
+.circle {
+    background-color: gray;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+}
+
+.custom-gridCls .x-column-header-inner .x-column-header-text {
+    white-space: normal;
+}
+
+
+
+div.thumb{
+    float: left;
+}
+.pics-list {
+    background-color: white;
+    padding: 0px 10px 10px 10px;
+
+}
+.pics-list-content{
+    padding: 10px;
+    border-left: 0px !important;
+}
+
+.btn
+{
+    background-color: #2e83ff !important;
+    background-image: none;
+}
+
+.config16 {
+     width: 16px;
+     height: 16px;
+     background-image: url(../resources/config16.png);
+     background-size: 100%;
+ }
+
+.image16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/image16.png);
+    background-size: 100%;
+}
+
+
+.table16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/table16.png);
+    background-size: 100%;
+}
+
+.filter16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/filter16.png);
+    background-size: 100%;
+}
+
+.filter-add16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/funnel-add16.png);
+    background-size: 100%;
+}
+
+.filter-minus16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/funnel-minus16.png);
+    background-size: 100%;
+}
+
+.excel16 {
+    width: 16px;
+    height: 16px;
+   // margin: 0 auto 5px;
+    background-image: url(../resources/excel16.png);
+    background-size: 100%;
+}
+
+.add16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/add16.png);
+    background-size: 100%;
+}
+
+.del16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/minus16.png);
+    background-size: 100%;
+}
+
+.edit16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/pencil16.png);
+    background-size: 100%;
+}
+
+.attach16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/attach16.png);
+    background-size: 100%;
+}
+
+.downl16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/downl16.png);
+    background-size: 100%;
+}
+
+.save16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/save16.png);
+    background-size: 100%;
+}
+
+.mappoint16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/map_point16.png);
+    background-size: 100%;
+    background-position: center;
+}
+
+.length16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/length16.png);
+    background-size: 100%;
+}
+
+
+
+
+
+.table24 {
+    width: 24px;
+    height: 24px;
+    background-image: url(../resources/table24.png);
+    background-size: 100%;
+}
+
+.dorgis16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/dorgis16.ico);
+    background-size: 100%;
+}
+
+.logout16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../resources/logout16.png);
+    background-size: 100%;
+}
+
+
+
+
+.table32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/table32.png);
+    background-size: 100%;
+}
+
+.filter32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/filter32.png);
+    background-size: 100%;
+}
+
+.filter-add32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/funnel-add32.png);
+    background-size: 100%;
+}
+
+.filter-minus32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/funnel-minus32.png);
+    background-size: 100%;
+}
+
+.excel32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/excel32.png);
+    background-size: 100%;
+}
+
+.add32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/add32.png);
+    background-size: 100%;
+}
+
+.del32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/minus32.png);
+    background-size: 100%;
+}
+
+.edit32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/pencil32.png);
+    background-size: 100%;
+}
+
+.attach32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/attach32.png);
+    background-size: 100%;
+}
+
+.downl32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/downl32.png);
+    background-size: 100%;
+}
+
+.save32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/save32.png);
+    background-size: 100%;
+}
+
+.mappoint32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/map_point32.png);
+    background-size: 100%;
+}
+
+.length32 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../resources/length32.png);
+    background-size: 100%;
+}
+
+
+
+#layerstable span.x-btn-icon-el:not(.tick) {
+    display: block;
+    margin: 0 auto 5px;
+}
+
+#attachlist span.x-btn-icon-el:not(.tick) {
+    display: block;
+    margin: 0 auto 5px;
+}
+
+
+
+
+.x-grid-row-summary .x-grid-cell{
+    //  background-color: #0099f !important;
+    font-size: x-small !important;
+    font-weight: bold !important;
+}
+
+.x-grid-group-hd {
+    border-bottom: 1px solid #99bbe8;
+    cursor: pointer;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.x-grid-group-hd div:first-child {
+    //  background:transparent url(../images/default/grid/group-expand-sprite.gif) no-repeat 3px -47px;
+    padding: 4px 4px 4px 17px;
+    color: #3764a0;
+    font: bold 11px tahoma, arial, helvetica, sans-serif;
+}
+
+
+.amstrad-balloon * {
+    border-collapse: collapse;
+    border: 1px;
+    border-style: solid;
+}
+
+/*fixed header
+.amstrad-balloon{
+    overflow-y: auto;
+    height:100px;
+}
+.amstrad-balloon table{
+    width: 100%;
+    table-layout: fixed;
+   // border: 1px solid black;
+   // border-spacing: 1px;
+}
+.amstrad-balloon table th {
+    text-align: left;
+    top:0;
+    position: sticky;
+    background-color: white;
+}
+*/
+
+
+/*
+.x-form-itemselector-top {
+    background-image: url(../resources/itemselector/top.gif);
+}
+.x-form-itemselector-up {
+    background-image: url(../resources/itemselector/up.gif);
+}
+.x-form-itemselector-add {
+    background-image: url(../resources/itemselector/right.gif);
+}
+.x-form-itemselector-remove {
+    background-image: url(../resources/itemselector/left.gif);
+}
+.x-form-itemselector-down {
+    background-image: url(../resources/itemselector/down.gif);
+}
+.x-form-itemselector-bottom {
+    background-image: url(../resources/itemselector/bottom.gif);
+}*/
+/*
+.my-header-cls{
+    padding-bottom: 20px;!important;
+    padding-top: 20px;!important;
+}*/
+
+.my-header .x-panel-header-default {
+   // background-color: green;
+   // padding: 6px 16px 6px 16px;
+    padding-bottom: 6px !important;;
+    padding-top: 6px !important;;
+}
+
+
+.pics-list-content{
+    padding: 10px;
+    border-left: 0px !important;
+}
+/*div.thumb{
+    float: left;
+}*/
+
+div.thumb_photo{
+    float: left;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+div.thumb_photo img{
+     width: 250px;
+     height: 80%;
+     padding: 3px;
+ }
+div.thumb_photo .info{
+    height: 20%;
+    width: 100%;
+    font-size:10px;
+    padding-left:0px;
+}
+
+div.thumb_video{
+    float: left;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+}
+div.thumb_video video{
+    width: 450px;
+    height: 80%;
+    padding: 3px;
+}
+div.thumb_video .info{
+    height: 20%;
+    width: 100%;
+    font-size:10px;
+    padding-left:0px;
+}
+
+div.thumb_pdf{
+    float: left;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+}
+div.thumb_pdf embed{
+    width: 450px;
+    height: 80%;
+    padding: 3px;
+}
+div.thumb_pdf .info{
+    height: 20%;
+    width: 100%;
+    font-size:10px;
+    padding-left:0px;
+}
+
+
+

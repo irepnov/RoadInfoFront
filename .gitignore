@@ -1,0 +1,7 @@
+/build
+ext/*
+!ext/packages/
+ext/packages/*
+!ext/packages/master-theme
+.idea
+*.log
